@@ -1,0 +1,21 @@
+table{
+
+    color: rgb(26, 14, 14);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    border-collapse: collapse;
+    border-color: black;
+
+}
+td{
+    color: rgb(3, 3, 18);
+    border:1px solid blue;
+    padding: 5px;
+
+}
+th{
+    color: rgb(26, 26, 172);
+    border:1px solid blue;
+    padding: 5px;
+
+}

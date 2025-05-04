@@ -1,0 +1,25 @@
+<!-- <h2>String Interpolation</h2>
+<h3>{{var1}}</h3>
+<p>----------------------</p>
+<div>
+    <h2>user Information</h2>
+    <h3 > Current Date & Time: {{date}}</h3>
+    <h3>
+        UserName: {{userName}}
+    </h3>
+    <h3>FirstName: {{firstName}}</h3>
+
+    <h3>Lastname: {{lastName}}</h3>
+    <h3>email:{{email}}</h3>
+
+        <button id ="btnId" [disabled]="controlFlag" (click)="updateName(input.value)"> Order Now</button>
+</div>
+    -->
+    <input type="text" placeholder="Enter your Name" #input>
+    <button  (click)="updateName(input.value)" [(ngModel)]="userName"> Submit</button>
+<br>
+Employee Name:{{userName}} 
+<h2>Two way Data Binding</h2>
+<input type="text" placeholder="Two Way Data Binding Test" [(ngModel)]="guestName">
+<br><br>
+    guestName: {{guestName}}

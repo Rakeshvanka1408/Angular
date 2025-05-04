@@ -1,0 +1,21 @@
+<h1>Employee Details Screen</h1>
+<div *ngFor="let emp of users">
+    Employee Name: {{ emp.name }} <br>
+    Title: {{ emp.title }} <br>
+    Salary: {{ emp.salary }} <br>
+    
+    <div [ngSwitch]="emp.department">
+        Department: 
+        <span *ngSwitchCase="1">Developer</span>
+        <span *ngSwitchCase="2">Testing</span>
+        <span *ngSwitchCase="3">Technical</span>
+        <span *ngSwitchCase="4">Others</span>
+        <span *ngSwitchDefault>Others</span>
+    </div>
+    
+    <div *ngIf="emp.address.length > 0">
+        Address: {{ emp.address }}
+    </div><br>
+
+
+</div>
